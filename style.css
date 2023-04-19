@@ -1,0 +1,100 @@
+/* reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* font face */
+
+@font-face {
+    font-family: 'Ulagadi';
+    src: url('assets/UlagadiSansThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ulagadi';
+    src: url('assets/UlagadiSansExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ulagadi';
+    src: url('assets/UlagadiSansLight.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ulagadi';
+    src: url('assets/UlagadiSansBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* style */
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #a4b0beb0;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    padding: 5px 0px;
+}
+
+.logo-text {
+    font-family: 'Ulagadi', sans-serif;
+    font-weight: 200;
+    font-size: 35px;
+    user-select: none;
+}
+
+button {
+    font-family: 'Ulagadi', sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    padding: 3px 20px;
+    border: 1px black solid;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: filter 0.2s ease-in;
+}
+
+button:hover {
+    filter: invert(100%);
+}
+
+main {
+    background-color: #dfe4ea;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main-wrapper {
+    display: grid;
+    width: 65%;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 35px 0px;
+    border: 1px red solid;
+}
+
+.book {
+    display: flex;
+    justify-content: center;
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);
+    background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
+    width: 150px;
+    height: 200px;
+}
