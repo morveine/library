@@ -228,23 +228,3 @@ label[for="input-read"] {
 .hide {
     display: none;
 }
-
-#book-1 {
-    background-color: #ee6868;
-}
-
-#book-2 {
-    background-color: #65cae1;
-}
-
-#book-3 {
-    background-color: #d055b9;
-}
-
-#book-4 {
-    background-color: #63c885;
-}
-
-#book-5 {
-    background-color: #516acc;
-}
