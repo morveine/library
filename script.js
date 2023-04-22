@@ -17,8 +17,6 @@ formBackButton.addEventListener('click', (e) => {
 	hideElement(formOverlay);
 });
 
-let books = [];
-let colors = ['#b33771', '#3b3b98','#D6A2E8','#1B9CFC','#82589F','#EAB543','#F97F51', '#f53b57'];
 let n = 1;
 
 class Book {
@@ -31,6 +29,10 @@ class Book {
 		n++;    //gives unique ids to every book
 	}
 }
+
+
+let books = [new Book('G.Orwell', '1984', 400, true), new Book('Gabriel Garcia Marquez', 'One Hundred Years of Solitude', 800, false)];
+let colors = ['#b33771', '#3b3b98','#D6A2E8','#1B9CFC','#82589F','#EAB543','#F97F51', '#f53b57'];
 
 function showAddForm() {
 	formOverlay.classList.remove('hide');
@@ -72,3 +74,4 @@ function hideElement(el) {
 	el.classList.add('hide');
 }
 
+books.forEach(book => addBookFunc(book))
