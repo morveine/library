@@ -18,10 +18,10 @@
     </header>
     <main>
         <div class="main-wrapper">
-            <div class="book" id="book-1">
-                <span class="book-author">G.Orwell</span>
-                <span class="book-title">1984</span>
-                <div class="ribbon"><span>READ</span></div>
+            <div class="book hide" id="book-template">
+                <span class="book-author"></span>
+                <span class="book-title"></span>
+                <div class="ribbon hide"><span>READ</span></div>
                 <div class="onhover hide">
                     <svg width="64px" height="64px" viewBox="-256 -256 1536.00 1536.00" fill="#000000" class="book-icon"
                         version="1.1" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)" stroke="#000000">
@@ -56,109 +56,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="book" id="book-2">
-                <span class="book-author">John Ronald Reuel Tolkien</span>
-                <span class="book-title">The Lord of the Rings</span>
-                <div class="ribbon hide"><span>READ</span></div>
-                <div class="onhover hide">
-                    <svg width="64px" height="64px" viewBox="-256 -256 1536.00 1536.00" fill="#000000" id="book-icon"
-                        version="1.1" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)" stroke="#000000">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
-                            <rect x="-256" y="-256" width="1536.00" height="1536.00" rx="768" fill="#ffffff"
-                                strokewidth="0"></rect>
-                        </g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                            stroke-width="10.24"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path
-                                d="M508 916.8c-49.6 0-92.8-16-124-45.6l-0.8-0.8H133.6c-38.4 0-69.6-31.2-69.6-69.6V172c0-38.4 31.2-69.6 69.6-69.6h238.4c52 0 100.8 23.2 133.6 64l3.2 3.2 3.2-3.2c32.8-40.8 81.6-64 133.6-64h238.4c38.4 0 69.6 31.2 69.6 69.6v629.6c0 38.4-31.2 69.6-69.6 69.6H632.8l-0.8 0.8c-31.2 29.6-74.4 44.8-124 44.8z m136-772.8c-72 8.8-110.4 40-110.4 89.6v639.2l4-0.8c21.6-4.8 40.8-15.2 55.2-31.2l2.4-3.2c4-6.4 9.6-10.4 12-10.4h301.6l-1.6-683.2H644z m-220.8 697.6c14.4 15.2 33.6 25.6 57.6 30.4l4 0.8V233.6c0-62.4-60.8-86.4-112.8-88.8H106.4v683.2H408c1.6 0 9.6 5.6 12.8 10.4l2.4 3.2z"
-                                fill=""></path>
-                        </g>
-                    </svg>
-                    <svg width="64px" height="64px" viewBox="-256 -256 1536.00 1536.00" fill="#000000"
-                        id="delete-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
-                            <rect x="-256" y="-256" width="1536.00" height="1536.00" rx="768" fill="#ffffff"
-                                strokewidth="0"></rect>
-                        </g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                            stroke-width="12.288"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path
-                                d="M32 241.6c-11.2 0-20-8.8-20-20s8.8-20 20-20l940 1.6c11.2 0 20 8.8 20 20s-8.8 20-20 20L32 241.6zM186.4 282.4c0-11.2 8.8-20 20-20s20 8.8 20 20v688.8l585.6-6.4V289.6c0-11.2 8.8-20 20-20s20 8.8 20 20v716.8l-666.4 7.2V282.4z"
-                                fill=""></path>
-                            <path
-                                d="M682.4 867.2c-11.2 0-20-8.8-20-20V372c0-11.2 8.8-20 20-20s20 8.8 20 20v475.2c0.8 11.2-8.8 20-20 20zM367.2 867.2c-11.2 0-20-8.8-20-20V372c0-11.2 8.8-20 20-20s20 8.8 20 20v475.2c0.8 11.2-8.8 20-20 20zM524.8 867.2c-11.2 0-20-8.8-20-20V372c0-11.2 8.8-20 20-20s20 8.8 20 20v475.2c0.8 11.2-8.8 20-20 20zM655.2 213.6v-48.8c0-17.6-14.4-32-32-32H418.4c-18.4 0-32 14.4-32 32.8V208h-40v-42.4c0-40 32.8-72.8 72.8-72.8H624c40 0 72.8 32.8 72.8 72.8v48.8h-41.6z"
-                                fill=""></path>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <!-- <div class="book" id="book-3">
-                <span class="book-author">Jane Austen</span>
-                <span class="book-title">Pride and Prejudice</span>
-            </div>
-            <div class="book" id="book-4">
-                <span class="book-author">Gabriel Garcia Marquez</span>
-                <span class="book-title">One Hundred Years of Solitude</span>
-            </div>
-            <div class="book" id="book-5">
-                <span class="book-author">Harper Lee</span>
-                <span class="book-title">To Kill a Mockingbird</span>
-            </div>
-            <div class="book" id="book-6">
-                <span class="book-author">Miguel de Cervantes</span>
-                <span class="book-title">Don Quixote</span>
-            </div>
-            <div class="book" id="book-7">
-                <span class="book-author">Mary Shelley</span>
-                <span class="book-title">Frankenstein</span>
-            </div>
-            <div class="book" id="book-8">
-                <span class="book-author">Herman Melville</span>
-                <span class="book-title">Moby-Dick</span>
-            </div>
-            <div class="book" id="book-9">
-                <span class="book-author">Ernest Hemingway</span>
-                <span class="book-title">The Old Man and the Sea</span>
-            </div>
-            <div class="book" id="book-10">
-                <span class="book-author">James Joyce</span>
-                <span class="book-title">Ulysses</span>
-            </div>
-            <div class="book" id="book-11">
-                <span class="book-author">Gabriel Garcia Marquez</span>
-                <span class="book-title">Love in the Time of Cholera</span>
-            </div>
-            <div class="book" id="book-12">
-                <span class="book-author">F. Scott Fitzgerald</span>
-                <span class="book-title">The Great Gatsby</span>
-            </div>
-            <div class="book" id="book-13">
-                <span class="book-author">Charles Dickens</span>
-                <span class="book-title">Great Expectations</span>
-            </div>
-            <div class="book" id="book-14">
-                <span class="book-author">J.D. Salinger</span>
-                <span class="book-title">The Catcher in the Rye</span>
-            </div>
-            <div class="book" id="book-15">
-                <span class="book-author">Mark Twain</span>
-                <span class="book-title">The Adventures of Huckleberry Finn</span>
-            </div>
-            <div class="book" id="book-16">
-                <span class="book-author">Emily Bronte</span>
-                <span class="book-title">Wuthering Heights</span>
-            </div>
-            <div class="book" id="book-17">
-                <span class="book-author">Margaret Atwood</span>
-                <span class="book-title">The Handmaid's Tale</span>
-            </div>
-            <div class="book" id="book-18">
-                <span class="book-author">George Orwell</span>
-                <span class="book-title">Animal Farm</span>
-            </div> -->
-            <div class="form-overlay">
+            <div class="form-overlay hide">
                 <form>
                     <label for="input-author">Author</label>
                     <input type="text" name="author" id="input-author">
